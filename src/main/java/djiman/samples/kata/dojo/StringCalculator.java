@@ -2,10 +2,13 @@ package djiman.samples.kata.dojo;
 
 import java.util.StringTokenizer;
 
+import org.springframework.stereotype.Service;
+
 /**
  * @author gorguindong
  *
  */
+@Service
 public class StringCalculator 
 {
     /**

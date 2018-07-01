@@ -1,9 +1,12 @@
 package djiman.samples.kata.dojo;
 
+import org.springframework.stereotype.Service;
+
 /**
  * @author gorguindong
  *
  */
+@Service
 public class PasswordVerifier {
 	private int errorCounter = 0;
 
