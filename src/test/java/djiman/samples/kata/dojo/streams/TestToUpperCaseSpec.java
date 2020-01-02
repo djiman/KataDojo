@@ -1,7 +1,5 @@
 package djiman.samples.kata.dojo.streams;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 import java.util.List;
