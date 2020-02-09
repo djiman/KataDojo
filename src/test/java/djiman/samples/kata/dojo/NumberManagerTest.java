@@ -1,5 +1,6 @@
 package djiman.samples.kata.dojo;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -17,6 +18,30 @@ public class NumberManagerTest {
 
 	@Autowired
 	NumberManager numberManager;
+	
+	@Test
+	public void testTriInsertionSimple() {
+		int[] res = numberManager.trinInsertion(new int[] { 2, 1 });
+		assertEquals(1, res[0]);
+		assertEquals(2, res[1]);
+	}
+	
+	@Test
+	public void testTriInsertionTroisElements() {
+		int[] res = numberManager.trinInsertion(new int[] { 2,4, 1 });
+		assertEquals(1, res[0]);
+		assertEquals(2, res[1]);
+		assertEquals(4, res[2]);
+	}
+	
+	@Test
+	public void testTriInsertionQuatreElements() {
+		int[] res = numberManager.trinInsertion(new int[] { 2,4,3, 1 });
+		assertEquals(1, res[0]);
+		assertEquals(2, res[1]);
+		assertEquals(3, res[2]);
+		assertEquals(4, res[3]);
+	}
 
 	@Test
 	public void testIsPrimeNumber_CinqEstUnNombrePremier() {

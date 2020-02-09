@@ -28,4 +28,16 @@ public class NumberManager {
 		return true;
 	}
 
+	public int[] trinInsertion(int[] pTabIn) {
+		for (int i = 0; i < pTabIn.length; i++) {
+			for (int j = i + 1; j < pTabIn.length; j++) {
+				if (pTabIn[i] > pTabIn[j]) {
+					int temp = pTabIn[j];
+					pTabIn[j] = pTabIn[i];
+					pTabIn[i] = temp;
+				}
+			}
+		}
+		return pTabIn;
+	}
 }
